@@ -157,7 +157,7 @@ with tab_dash:
                 showlegend=True,
                 legend=dict(x=0, y=1.08, orientation='h')
             )
-            st.plotly_chart(fig_line, use_container_width=True)
+            st.plotly_chart(fig_line, use_container_width=True, key='line')
 
         # ─── ROW 2 ────────────────────────────────────────────
         col_bar, col_pie = st.columns([1, 1])
@@ -218,7 +218,7 @@ with tab_dash:
                 showlegend=True,
                 legend=dict(x=0, y=1.1, orientation='h')
             )
-            st.plotly_chart(fig_bar, use_container_width=True)
+            st.plotly_chart(fig_bar, use_container_width=True, key='bar')
 
         # ── BOTTOM RIGHT: Pie chart ───────────────────────────
         with col_pie:
@@ -260,7 +260,7 @@ with tab_dash:
                     font=dict(size=12)
                 )
             )
-            st.plotly_chart(fig_pie, use_container_width=True)
+            st.plotly_chart(fig_pie, use_container_width=True, key='pie')
 
 # ══════════════════════════════════════════════════════════════
 # TAB INFO
